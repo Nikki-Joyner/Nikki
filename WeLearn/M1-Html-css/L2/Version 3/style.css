@@ -1,0 +1,79 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Color each language element */
+#ruby {background-color: #CA2B1D;}
+#python {background-color: #8DAD53;}
+#js {background-color: #2454DB;}
+#hyper {background-color: #F7CC77;}
+#css {background-color: lightblue;}
+#aframe {background-color: tan;}
+#p5 {background-color: #E88A9F;}
+#bootstrap {background-color: lightblue;}
+#java {background-color: #2454DB;}
+#swift {background-color: #CA2B1D;}
+#HTML {background-color: #8DAD53; }
+
+/* Style the .row elements */
+.row {
+  background-color: rgba(0,0,0,0.1);
+  margin: 10px;
+  min-height: 120px;
+}
+
+/* Style the font of the .item elements */
+.item {
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  white-space: nowrap;
+  padding: 20px 10px;
+  min-width: 145px;
+}
+
+/* ----------------------------------------------- */
+/* ---Please do not modify code above this line--- */
+/* ----------Code your flex classes below--------- */
+/* ----------------------------------------------- */
+
+/* Parent or Container elements */
+/* Style them all at once with this selector */
+.row { display: flex;
+
+}
+
+/* OR Style each row individually with these selectors */
+#row1 {
+justify-content: space-between;
+}
+
+}
+#row3 {
+justify-content: space-evenly;
+
+}
+
+
+/* Child elements or items */
+.item {
+
+  /* Parent or Container elements */
+  /* Style them all at once with this selector */
+  .row {
+    display: flex;
+  }
+
+  /* OR Style each row individually with these selectors */
+  #row1 {
+    flex-direction: row-reverse;
+  }
+
+  #row2 {
+    flex-direction: column;
+  }
+
+  #row3 {
+    flex-direction: row;
+  }
