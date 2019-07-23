@@ -13,23 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ .container {
+   display: grid;
+   grid-template-rows:[row1start] 50px[row2] 40px [row3] 100px [row4] 40px [row5end] 50px;
+   grid-template-columns: [C1Start] 50px [C2] 100px [C3] 100px [C4] 100px [C5End] 100px;
+   /* Style the template for the grid */
+ }
+.border-side1 {
 
-.container {
-  display:grid;
-  /* Style the template for the grid */
+  grid-row: span 5;
 }
-
-/* Making border black */
-#b {
-  background-color: black;
-}
-
+ /* Making border black */
+ #b {
+   background-color: black;
+ }
+/*
 #title {
-  grid-column: span 12;
+  grid-column: 1/span 1;
+  grid-row:  2/span 5;
 }
-
-.photo {
-  grid-column: /*insert format*/;
+ #photo1 {
+/*   grid-column: 1/span 4;
+   grid-row: 1/span 1; */
+ }
+/*
+.border_top{
+  grid-column: 1/span 4;
+  grid-row: 1/span 1;
 }
-
-/* Style remaining grid elements */
