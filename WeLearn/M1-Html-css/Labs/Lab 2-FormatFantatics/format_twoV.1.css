@@ -1,0 +1,44 @@
+/*
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ .container {
+   display: grid;
+   grid-template-rows:[row1start] 50px[row2] 40px [row3] 100px [row4] 40px [row5end] 50px;
+   grid-template-columns: [C1Start] 50px [C2] 100px [C3] 100px [C4] 100px [C5End] 100px;
+   /* Style the template for the grid */
+ }
+.border-side1 {
+
+  grid-column: 1/5
+
+}
+ /* Making border black */
+ #b {
+   background-color: black;
+ }
+/*
+#title {
+  grid-column: 1/span 1;
+  grid-row:  2/span 5;
+}
+ #photo1 {
+/*   grid-column: 1/span 4;
+   grid-row: 1/span 1; */
+ }
+/*
+.border_top{
+  grid-column: 1/span 4;
+  grid-row: 1/span 1;
+}
